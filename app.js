@@ -3,3 +3,17 @@ var typed = new Typed(".auto-type",{
     typeSpeed : 150,
     backSpeed : 150
   })
+
+  const imgsecFirst = document.getElementById("img1sec");
+  const imgsecSecond = document.getElementById("img2sec");
+  const imgsecThird = document.getElementById("img3sec");
+  
+function myFirst(){
+    document.getElementById("orimg").src="first.png";
+}
+function mySecond(){
+    document.getElementById("orimg").src="second.png";
+}
+function myThird(){
+    document.getElementById("orimg").src="third.png";
+}

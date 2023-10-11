@@ -25,11 +25,13 @@ background-color: #000000;
 position: relative;
 color: #fff;
 font-weight: 700;
+transition: 1.2s;
 }
     #navlink1{
-border-bottom: 3px solid white;
+        position: relative;
 color: #fff;
 font-weight: 700;
+transition: 1.2s;
 }
 
 
@@ -38,7 +40,7 @@ content: "";
 position: absolute;
 width: 0%;
 height: 2.7px;
-background-color:  #fff;
+background-color:  rgb(255, 217, 0);
 left: 0;
 bottom: -4px;
 transition: ease .43s;
@@ -47,7 +49,24 @@ transition: ease .43s;
 width: 100%;
 }
 #navlink:hover{
-    color: white;
+    color: rgb(255, 217, 0);
+}
+
+#navlink1::after{
+content: "";
+position: absolute;
+width: 0%;
+height: 2.7px;
+background-color:  rgb(255, 217, 0);
+left: 0;
+bottom: -4px;
+transition: ease .43s;
+}
+#navlink1:hover::after{
+width: 100%;
+}
+#navlink1:hover{
+    color: rgb(255, 217, 0);
 }
 
 /* main portion */
@@ -168,7 +187,9 @@ button:hover{
         width: 100%;
         display: block;
     }
-    
+    .section{
+        padding-top: 30%;
+    }
 }
 @media (max-width:450px) {
     .container{
@@ -180,6 +201,9 @@ button:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .section{
+        padding-top: 50%;
     }
 #orimg{
     padding-top: 15%;
@@ -204,8 +228,10 @@ padding-top: 15%;
 }
 }
 
-
-
+.section img{
+    border: 2px solid white;
+    margin: 0% 5%;
+}
 
 </style>
 </head>
@@ -237,7 +263,7 @@ padding-top: 15%;
                 <a id="navlink" class="nav-link active" href="#">Shopping</a>
               </li>
               <li class="nav-item">
-                <a id="navlink" class="nav-link active" href="#">Login / Signup</a>
+                <a id="navlink1" class="nav-link active" href="./login.html">Login / Signup</a>
               </li>
               
             </ul>
@@ -274,14 +300,17 @@ padding-top: 15%;
         
 <img id="orimg" src="./IMG/pngwing.com (11).png" width="100%" alt="">
         </div>
-        <div class="section">
-
-        </div>
+    </div>
+    <div class="section">
+        <img onclick="myFirst()" id="img1sec" src="./first.png" width="150px" height="100px" alt="">
+<img onclick="mySecond()" id="img2sec" src="./second.png" width="150px" height="100px"  alt="">
+<img onclick="myThird()" id="img3sec" src="./third.png" width="150px" height="100px"  alt="">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js" integrity="sha512-rXm6RiYDlz+aZC/ht75tGzeAmCg4gVfBA6Be5s5uENSahiXkgwEy10J2Cc+dxUAW4lRRQYbS5pugMOqBrs8ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./app.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
