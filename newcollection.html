@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" integrity="sha512-AZtJoEn5SfSZimv10x5NMO2gaZCdoU8nxtHJK8O4SbKNlQeb1ggkvf0b0QixuuXIjX3Tp5jzBbTWajki81Vl2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Architects+Daughter&family=Dancing+Script:wght@400;500&family=Gochi+Hand&family=Great+Vibes&family=Handlee&family=Indie+Flower&family=Kaushan+Script&family=Lato:wght@400;700&family=Lumanosimo&family=Miriam+Libre:wght@400;700&family=Molengo&family=Montserrat&family=Mooli&family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Staatliches&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: #000;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 17px;
+}
+.line1{
+    width: 100%;
+    height: 45%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(30px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    gap: 90px;
+}
+.first-side{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+.first-side img{
+    width: 90%;
+    height: 100%;
+}
+.date{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+h1{
+    font-family: 'Miriam Libre', sans-serif;
+color: #fff;
+font-weight: 900;
+letter-spacing: 10px;
+}
+h2{
+    color: rgb(255, 191, 0);
+font-size: 40px;
+font-weight: 890;
+}h3{
+    color: #fff;
+    font-size: 20px;
+}
+h4{
+    color: rgb(0, 132, 255);
+    font-weight: 900;
+}
+#navlink{
+position: relative;
+color: #fff;
+font-weight: 700;
+transition: 1.2s;
+}
+    #navlink1{
+        position: relative;
+color: #fff;
+font-weight: 700;
+transition: 1.2s;
+}
+
+
+#navlink::after{
+content: "";
+position: absolute;
+width: 0%;
+height: 2.7px;
+background-color:  rgb(255, 217, 0);
+left: 0;
+bottom: -4px;
+transition: ease .43s;
+}
+#navlink:hover::after{
+width: 100%;
+}
+#navlink:hover{
+    color: rgb(255, 217, 0);
+}
+
+#navlink1::after{
+content: "";
+position: absolute;
+width: 0%;
+height: 2.7px;
+background-color:  rgb(255, 217, 0);
+left: 0;
+bottom: -4px;
+transition: ease .43s;
+}
+#navlink1:hover::after{
+width: 100%;
+}
+#navlink1:hover{
+    color: rgb(255, 217, 0);
+}
+button{
+    padding: 1.7% 7%;
+    border:none;
+    border-radius: 50px;
+    border: 1.5px solid #fff;
+    color: #fff;
+    cursor: pointer;    
+    background-color: transparent;
+transition:  1.2s;
+}
+button:hover{
+    background-color: rgb(255, 217, 0);
+}
+*::selection{
+    background-color:rgb(255, 217, 0);
+    color: #fff;
+}
+@media (max-width:1000px) {
+    .line1{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        height: 117%;
+    }
+    .first-side{
+        width: 100%;
+    }
+    .first-side img{
+width: 55%;
+padding-top: 20px;
+    }
+ #img12{
+    width: 100%;
+    height: 80%;
+ }
+ #img123{
+    width: 100%;
+    height: 80%;
+ }
+}
+@media (max-width:400px) {
+    .line1{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        height: 117%;
+    }
+    .first-side{
+        width: 100%;
+    }
+    .first-side img{
+width: 55%;
+padding-top: 20px;
+    }
+ #img12{
+    width: 100%;
+    height: 50%;
+ }
+ #img123{
+    width: 100%;
+    height: 50%;
+ }
+}
+    </style>
+</head>
+<body>
+    <nav id="nav" style="background: transparent; box-shadow: none;" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./IMG/logo.png" width="90px" 
+           height="80px" ></a>
+          <button style="color: #fff;"
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a  id="navlink" class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">New Collection</a>
+              </li>
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">Shopping</a>
+              </li>
+              <li class="nav-item">
+                <a id="navlink1" class="nav-link active" href="./login.html">Login / Signup</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div class="container">
+    <div class="line1">
+<div class="first-side">
+    <img id="img11" src="./IMG/first-side 1img.png" alt="">
+</div>
+<div class="second-side">
+    <h1>Nike's BRand</h1>
+    <h2>Nike's Best Shoose Ever</h2>
+    <h3>Nike, Inc. is an American athletic footwear and apparel corporation <br> headquartered .</h3>
+<div class="date">
+    <button id="btn">Release Date</button>
+</div>
+</div>
+    </div>
+    <br><br>
+    <div class="line1">
+<div class="first-side">
+    <img id="img12" src="./IMG/first-side 2img.png" alt="">
+</div>
+<div class="second-side">
+    <h1>Nike's BRand</h1>
+    <h2>Nike's Fast Shoose Ever</h2>
+    <h3>Nike, Inc. is an American athletic footwear and apparel corporation <br> headquartered .</h3>
+<div class="date">
+    <button id="btn1">Release Date</button>
+</div>
+</div>
+    </div><br><br>
+    <div class="line1">
+<div class="first-side">
+    <img id="img123" src="./IMG/first-side 3img.png" alt="">
+</div>
+<div class="second-side">
+    <h1>Nike's BRand</h1>
+    <h2>Nike's Relexable Shoose Ever</h2>
+    <h3>Nike, Inc. is an American athletic footwear and apparel corporation <br> headquartered .</h3>
+<div class="date">
+    <button id="btn2">Release Date</button>
+</div>
+</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js" integrity="sha512-rXm6RiYDlz+aZC/ht75tGzeAmCg4gVfBA6Be5s5uENSahiXkgwEy10J2Cc+dxUAW4lRRQYbS5pugMOqBrs8ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="newcollection.js"></script>
+</body>
+</html>
