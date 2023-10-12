@@ -7,7 +7,7 @@ var typed = new Typed(".auto-type",{
   const imgsecFirst = document.getElementById("img1sec");
   const imgsecSecond = document.getElementById("img2sec");
   const imgsecThird = document.getElementById("img3sec");
-  
+  const h1 = document.getElementsByClassName("autotype")
 function myFirst(){
     document.getElementById("orimg").src="first.png";
 }
